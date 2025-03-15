@@ -89,9 +89,10 @@
             text-align: center;
         }*/
         .scrolling-text {
-            position: relative;
-            top: 25px; /* Adjust the position on top of the video */
-            width: 70%;
+            position: absolute;
+            top: 29px; /* Adjust the position on top of the video */
+            width: 620px;
+            margin-left: 115px;
             font-size: 18px;
             font-weight: bold;
             color: black;
@@ -104,15 +105,15 @@
         .scrolling-text span {
             display: inline-block;
             /*width="620";*/
-            animation: scrollText 6s linear infinite;
+            animation: scrollText 10s linear infinite;
             white-space: nowrap; /* Prevent text from breaking */
                 }
         @keyframes scrollText {
             from {
-                transform: translateX(100%);
+                transform: translateX(-100%);
             }
             to {
-                transform: translateX(-100%);
+                transform: translateX(100%);
             }
         }
         footer {
