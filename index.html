@@ -70,6 +70,23 @@
             margin-top: 20px;
             border-radius: 10px;
         }
+        .live {
+            position: relative;
+            width: 854px; /* Match the iframe width */
+            height: 480px; /* Match the iframe height */
+        }
+         .overlay-text {
+            position: absolute;
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
         footer {
             margin-top: 20px;
             background: bisque;
@@ -111,11 +128,14 @@
             <source src="Pre wed shoot video comes here" type="">
             Your browser does not support the video tag.
         </video> -->
-        <iframe 
-            src="https://player.twitch.tv/?channel=liveevent06&parent=ravitejapola1.github.io" 
-            height="378" width="620"
-            allowfullscreen>
-        </iframe>
+        <div class="live">
+            <iframe 
+                src="https://player.twitch.tv/?channel=liveevent06&parent=ravitejapola1.github.io" 
+                height="378" width="620"
+                allowfullscreen>
+            </iframe>
+                <div class="overlay-text">Bharath With Supriya Sai</div>
+        </div>  
         <!-- <h5> Live Chat with your closest ones here:</h5>
         <iframe
               id="chat_embed"
